@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NearExpiry | Stock & Expiry Alert System</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand"><div class="brand-mark">N</div><div><strong>NearExpiry</strong><small>Stock Control</small></div></div>
+      <div class="nav-label">WORKSPACE</div>
+      <nav id="navigation">
+        <button class="nav-item active" data-page="dashboard"><span>▦</span> Dashboard</button>
+        <button class="nav-item" data-page="products"><span>▣</span> Products</button>
+        <button class="nav-item" data-page="categories"><span>◫</span> Categories</button>
+        <button class="nav-item" data-page="suppliers"><span>♧</span> Suppliers</button>
+        <button class="nav-item" data-page="stockin"><span>↓</span> Stock In</button>
+        <button class="nav-item" data-page="stockout"><span>↑</span> Stock Out</button>
+        <button class="nav-item" data-page="alerts"><span>⚑</span> Expiry Alerts <b id="alertNavCount" class="nav-count">0</b></button>
+        <button class="nav-item" data-page="reports"><span>▤</span> Reports</button>
+        <button class="nav-item" data-page="activity"><span>◷</span> Activity Log</button>
+        <button class="nav-item" data-page="settings"><span>⚙</span> Settings</button>
+      </nav>
+      <div class="sidebar-footer"><div class="avatar">QA</div><div><strong>Demo Admin</strong><small>Manual Testing Project</small></div></div>
+    </aside>
+    <main class="main-area">
+      <header class="topbar">
+        <div><div class="eyebrow">INVENTORY WORKSPACE</div><h1 id="pageTitle">Dashboard</h1></div>
+        <div class="top-actions"><span class="today" id="todayLabel"></span><button class="btn btn-primary" id="quickAddBtn">＋ Add Product</button></div>
+      </header>
+      <div id="notice" class="notice hidden"></div>
+      <section id="pageContent"></section>
+      <footer>NearExpiry · Stock & Expiry Alert System <span>Demo data is saved in this browser.</span></footer>
+    </main>
+  </div>
+  <div id="modalRoot"></div>
+  <script src="app.js"></script>
+</body>
+</html>
